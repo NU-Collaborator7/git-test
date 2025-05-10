@@ -2,76 +2,33 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-  <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <title>Frontend Mentor | Baseball Apparel coming soon page</title>
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-      body{color: #FFFFFF;
-        background: #333333;
-        text-shadow: 0 -1px 4px #FFF, 0 -2px 10px #ff0, 0 -10px 20px #ff8000, 0 -18px 40px #F00;
-        color: #FFFFFF;
-        background: #333333;
-        background-image: url("back_ground.jpg");
-        padding: 30px;
-        text-align: center;ßß
-      }
-      footer {
-        width: 90%;
-        background: black;
-        position: absolute;
-        text-shadow: 0 -1px 4px #FFF, 0 -2px 10px #ff0, 0 -10px 20px #ff8000, 0 -18px 40px #F00;
-        opacity: 0.8;
-        bottom: 0;
-        height: 50px;
-      }
-      table{
-	    width:60%;
-	    border-collapse: separate;
-	    border-radius:20px;
-	    border-left:2px solid #e95295;
-	    border-top:2px solid #e95295;
-      }
-      table th{
-	    background-color:rgba(233, 82, 149, 0.3);
-	    border-bottom:2px solid #e95295;
-	    border-right:2px solid #e95295;
-      }
-      table thead th{
-	    border-radius:18px 0 0 0; 
-      }
-      table thead td:last-child{
-	    border-radius:0 18px 0 0; 
-      }
-      table tbody tr:last-child th{
-	    border-radius:0 0 0 18px; 
-      }
-      table tbody tr:last-child td:last-child{
-	    border-radius:0 0 18px 0; 
-      }
-  </style>
+  <link rel="stylesheet" href="style.css">
+  <title>Coming Soon</title>
+  <style>.attribution{font-size:11px;text-align:center;margin-left:11px}.attribution a{color:hsl(0,74%,74%);text-decoration:none}</style>
 </head>
 <body>
-<div id="style1"><center>
-  <table bgcolor="black" style="opacity: 0.6;"><tr><td><pre>
-    <center><font size=+5>We're coming soon!</font><hr></pre></center>
-    <font size=+1><pre>
-    Dear all baseball lovers,
-    
-    We're currently building our new online store. 
-    Just add your email <font size=+3><a href="">here</a></font> to stay up-to-date!
-    Sincerely,
-
-    Mr. Baseball
-    </pre>
-    </font>
-  </td></tr></table>
-</div>
-</center>
-<pre>
-<footer>
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by <a href="#">Mr.Baseball</a>.
-</footer></pre>
+  <section>
+    <img src="images/logo.svg" alt="Logo">
+    <img src="images/hero-mobile.jpg" alt="Hero">
+  </section>
+  <section>
+    <img src="images/logo.svg" alt="Logo">
+    <div>
+      <h1><span>WE'RE</span> COMING SOON</h1>
+      <p>Hello! We're building our new fashion store. Stay updated!</p>
+      <form action="#">
+        <div>
+          <input type="email" placeholder="Email" required>
+          <button><img src="images/icon-arrow.svg" alt="Submit"></button>
+        </div>
+        <img src="images/icon-error.svg" alt="Error" id="img" hidden>
+        <p id="p" hidden>Invalid email</p>
+      </form>
+    </div>
+  </section>
+  <section></section>
+  <script src="script.js"></script>
 </body>
 </html>
