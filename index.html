@@ -1,14 +1,126 @@
-<div class="container">
-  <div class="left-section">
-    <div class="logo">BASE APPAREL</div>
-    <h1 class="coming-soon">WE'RE<br>COMING<br>SOON</h1>
-    <p class="description">Hello fellow shoppers! We're currently building our new fashion store. Add your email below to stay up-to-date with announcements and our launch deals.</p>
-    <div class="email-input">
-      <input type="email" placeholder="Email Address">
-      <button>></button>
+はい、承知いたしました。ご提供いただいたHTMLにCSSを埋め込む方法をいくつかご紹介します。
+
+方法１：<style>タグを使用する（HTMLファイル内）
+
+HTMLファイルの<head>タグの中、または<body>タグの開始直前に<style>タグを記述し、その中にCSSを記述します。
+
+HTML
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Coming Soon</title>
+  <style>
+    body {
+      font-family: sans-serif; /* Please specify your preferred font */
+      margin: 0;
+      padding: 0;
+      background-color: #f7f7f7; /* Background color */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+    .container {
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+      display: flex;
+      width: 80%; /* Adjust the width as needed */
+      max-width: 1200px;
+      overflow: hidden; /* Prevent image from overflowing */
+    }
+    .left-section {
+      padding: 50px;
+      text-align: left;
+      flex: 1;
+    }
+    .logo {
+      font-size: 1.5em;
+      color: #e91e63; /* Pink logo color */
+      margin-bottom: 30px;
+    }
+    .coming-soon {
+      font-size: 3em;
+      color: #333;
+      line-height: 1.2;
+      margin-bottom: 20px;
+      font-weight: bold;
+    }
+    .description {
+      color: #777;
+      line-height: 1.6;
+      margin-bottom: 30px;
+    }
+    .email-input {
+      display: flex;
+      border-radius: 25px;
+      overflow: hidden;
+      border: 1px solid #ddd;
+    }
+    .email-input input {
+      flex: 1;
+      padding: 15px 20px;
+      border: none;
+      font-size: 1em;
+    }
+    .email-input button {
+      background-color: #e91e63; /* Pink button color */
+      color: #fff;
+      border: none;
+      padding: 15px 30px;
+      font-size: 1em;
+      cursor: pointer;
+    }
+    .email-input button:hover {
+      background-color: #d4145a; /* Hover color */
+    }
+    .right-section {
+      flex: 1;
+    }
+    .right-section img {
+      width: 100%;
+      height: auto;
+      display: block; /* Remove extra space below the image */
+    }
+    /* Responsive Design */
+    @media (max-width: 768px) {
+      .container {
+        flex-direction: column;
+      }
+
+      .left-section {
+        padding: 30px;
+        text-align: center;
+      }
+
+      .right-section img {
+        width: 100%;
+      }
+
+      .email-input {
+        margin: 0 auto;
+        max-width: 300px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="left-section">
+      <div class="logo">BASE APPAREL</div>
+      <h1 class="coming-soon">WE'RE<br>COMING<br>SOON</h1>
+      <p class="description">Hello fellow shoppers! We're currently building our new fashion store. Add your email below to stay up-to-date with announcements and our launch deals.</p>
+      <div class="email-input">
+        <input type="email" placeholder="Email Address">
+        <button>></button>
+      </div>
+    </div>
+    <div class="right-section">
+      <img src="path/to/your/image.jpg" alt="Model">
     </div>
   </div>
-  <div class="right-section">
-    <img src="path/to/your/image.jpg" alt="Model">
-  </div>
-</div>
+</body>
+</html>
