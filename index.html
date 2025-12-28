@@ -1,126 +1,39 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <title>Coming Soon!</title>
-  <style>
-    body {
-      background-image: url("/images/bg-pattern-desktop.svg");
-      font-family: sans-serif;
-      margin: 0;
-      padding: 0;
-      background-color: #f7f7f7;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      min-height: 100vh;
-      background-image: background-image: url( '/path/image.svg' );
-    }
-   
-    .title_font{
-      color: pink;
-      font-size: 4em;
-    }
-    .container {
-      background-color: #fff;
-      border-radius: 10px;
-      box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-      display: flex;
-      width: 80%; 
-      max-width: 1200px;
-      overflow: hidden; 
-    }
-    .left-section {
-      padding: 50px;
-      text-align: left;
-      flex: 1;
-    }
-    .logo {
-      font-size: 1.5em;
-      color: #e91e63; 
-      margin-bottom: 30px;
-    }
-    .coming-soon {
-      font-size: 3em;
-      color: #333;
-      line-height: 1.2;
-      margin-bottom: 20px;
-      font-weight: bold;
-    }
-    .description {
-      color: #777;
-      line-height: 1.6;
-      margin-bottom: 30px;
-    }
-    .email-input {
-      display: flex;
-      border-radius: 25px;
-      overflow: hidden;
-      border: 1px solid #ddd;
-    }
-    .email-input input {
-      flex: 1;
-      padding: 15px 20px;
-      border: none;
-      font-size: 1em;
-    }
-    .email-input button {
-      background-color: #e91e63; 
-      border: none;
-      padding: 15px 30px;
-      font-size: 1em;
-      cursor: pointer;
-    }
-    .email-input button:hover {
-      background-color: #d4145a; 
-    }
-    .right-section {
-      flex: 1;
-    }
-    .right-section img {
-      width: 100%;
-      height: 600px;
-      display: block; 
-    }
-    /* Responsive Design */
-    @media (max-width: 900px) {
-      .container {
-        flex-direction: column;
-      }
-
-      .left-section {
-        padding: 30px;
-        text-align: center;
-      }
-
-      .right-section img {
-        width: 100%;
-      }
-
-      .email-input {
-        margin: 0 auto;
-        max-width: 300px;
-      }
-    }
-  </style>
-</head>
+<html>
 <body>
-  <div class="container">
-    <div class="left-section">
-      <img src="images/logo.svg" alt="logo">
-      <div class="title_font">W E ' R E</div>
-      <h1 class="coming-soon">C O M I N G<br>S O O N</h1>
-      <p class="description">Hello fellow shoppers! We're currently building our new fashion store. Add your email below to stay up-to-date with announcements and our launch deals.</p>
-      <div class="email-input">
-        <input type="email" placeholder="Email Address">
-        <button>></button>
-      </div>
-    </div>
-    <div class="right-section">
-      <img src="images/hero-mobile.jpg" alt="Model">
-    </div>
-  </div>
+    <script src="https://js.puter.com/v2/"></script>
+    <script>
+        // Using gpt-5.2 model
+        puter.ai.chat(
+            "Write a short poem about coding",
+            { model: "gpt-5.2" }
+        ).then(response => {
+            puter.print(response);
+        });
+
+        // Using gpt-5.2-chat model
+        puter.ai.chat(
+            "Write a short poem about coding",
+            { model: "gpt-5.2-chat" }
+        ).then(response => {
+            puter.print(response);
+        });
+
+        // Using gpt-5.2-pro model
+        puter.ai.chat(
+            "Write a short poem about coding",
+            { model: "gpt-5.2-pro", driver: "openrouter" }
+        ).then(response => {
+            puter.print(response);
+        });
+
+        // Using gpt-5.1 model
+        puter.ai.chat(
+            "Write a short poem about coding",
+            { model: "gpt-5.1" }
+        ).then(response => {
+            puter.print("<h2>Using gpt-5.1 model</h2>");
+            puter.print(response);
+        });
+    </script>
 </body>
 </html>
